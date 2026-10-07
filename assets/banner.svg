@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.07" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .title { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; font-weight: 800; font-size: 42px; fill: #ffffff; }
+    .subtitle { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; font-weight: 500; font-size: 20px; fill: #cbd5e1; }
+    .badge-text { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; font-weight: 600; font-size: 13px; fill: #a5b4fc; }
+    .scan-line { animation: scan 4s ease-in-out infinite alternate; }
+    .pulse-glow { animation: pulse 3s ease-in-out infinite alternate; }
+    .float-item { animation: float 6s ease-in-out infinite alternate; }
+    
+    @keyframes scan {
+      0% { transform: translateY(40px); opacity: 0.3; }
+      100% { transform: translateY(260px); opacity: 0.8; }
+    }
+    @keyframes pulse {
+      0% { opacity: 0.2; transform: scale(0.98); }
+      100% { opacity: 0.6; transform: scale(1.02); }
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-10px); }
+    }
+  </style>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="320" rx="16" fill="url(#bg-gradient)" />
+  <rect width="1200" height="320" rx="16" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2" />
+
+  <!-- Animated Background Shapes (Behind text/foreground) -->
+  <g class="pulse-glow">
+    <circle cx="150" cy="80" r="140" fill="#6366f1" opacity="0.15" filter="url(#glow)" />
+    <circle cx="1050" cy="240" r="160" fill="#a855f7" opacity="0.15" filter="url(#glow)" />
+  </g>
+
+  <!-- Grid overlay -->
+  <path d="M0 80 H1200 M0 160 H1200 M0 240 H1200 M200 0 V320 M400 0 V320 M600 0 V320 M800 0 V320 M1000 0 V320" stroke="rgba(255,255,255,0.03)" stroke-width="1" />
+
+  <!-- Dynamic OCR Laser Scanning Beam Background effect -->
+  <line x1="100" y1="0" x2="1100" y2="0" stroke="url(#accent-grad)" stroke-width="3" opacity="0.7" filter="url(#glow)" class="scan-line" />
+
+  <!-- Decorative Tech Graphic Elements (Right side, non-overlapping) -->
+  <g transform="translate(860, 50)" class="float-item">
+    <!-- Document Card Graphic -->
+    <rect x="0" y="0" width="260" height="210" rx="12" fill="url(#card-grad)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
+    <rect x="25" y="30" width="120" height="12" rx="4" fill="#6366f1" opacity="0.8" />
+    <rect x="25" y="55" width="210" height="8" rx="3" fill="#cbd5e1" opacity="0.3" />
+    <rect x="25" y="73" width="180" height="8" rx="3" fill="#cbd5e1" opacity="0.3" />
+    <rect x="25" y="91" width="195" height="8" rx="3" fill="#cbd5e1" opacity="0.3" />
+    
+    <!-- Extracted Bounding Box Overlay -->
+    <rect x="20" y="115" width="220" height="65" rx="6" fill="rgba(168, 85, 247, 0.15)" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="4 2" />
+    <text x="35" y="142" font-family="monospace" font-size="12" fill="#38bdf8">&gt; OCR Text Extracted</text>
+    <text x="35" y="162" font-family="monospace" font-size="11" fill="#4ade80">Accuracy: 99.4% [JSON]</text>
+  </g>
+
+  <!-- Foreground Title and Subtitle Layer -->
+  <g transform="translate(70, 0)">
+    <!-- Top Pill Badge -->
+    <g transform="translate(0, 55)">
+      <rect width="280" height="30" rx="15" fill="rgba(99, 102, 241, 0.2)" stroke="#6366f1" stroke-width="1" />
+      <text x="14" y="20" class="badge-text">🚀 AWESOME OCR &amp; DOCUMENT AI</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="142" class="title">Optical Character Recognition &amp;<br/>Document AI Ecosystem ⚡</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="240" class="subtitle">Curated directory of SOTA Vision-LLMs, Layout Models, &amp; SaaS Engines</text>
+    
+    <!-- Accent Line under Title -->
+    <rect x="0" y="260" width="480" height="4" rx="2" fill="url(#accent-grad)" />
+  </g>
+</svg>

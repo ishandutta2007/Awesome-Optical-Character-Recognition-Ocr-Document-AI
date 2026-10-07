@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Optical-Character-Recognition-Ocr-Document-AI/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Optical-Character-Recognition-Ocr-Document-AI?style=social&color=white" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Optical-Character-Recognition-Ocr-Document-AI/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Optical-Character-Recognition-Ocr-Document-AI?style=social&color=white" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Optical-Character-Recognition-Ocr-Document-AI/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Optical-Character-Recognition-Ocr-Document-AI?style=social&color=white" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Optical-Character-Recognition-Ocr-Document-AI/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Optical-Character-Recognition-Ocr-Document-AI?color=blue" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -62,7 +62,7 @@ The global Intelligent Document Processing (IDP) market size is estimated betwee
 
 ## 🔓 Open-Source GitHub Projects
 
-Sorted by GitHub Stars (descending order).
+Sorted by GitHub_Stars (descending order).
 
 ### 🤖 Document AI & Vision-LLM Frameworks
 
@@ -128,7 +128,7 @@ Contributions are welcome! Help us keep this directory accurate and updated:
 
 1. 🍴 Fork the repository.
 2. 📝 Add or update entries in `README.md` using standard markdown formatting.
-3. 🔗 Include official homepage/GitHub repository link, star badge, concise description, and license details.
+3. 🔗 Include official homepage/GitHub repository link, Stars_Badge, concise description, and license details.
 4. 🚀 Open a Pull Request with a clear summary of your additions.
 
 Please ensure all added open-source projects have active maintenance and clear open-source licensing.
